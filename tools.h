@@ -62,7 +62,7 @@ void leerMallayCondicionesLaboTres(mesh &m){
      file.open(filename);
     }while(!file);
 
-    file >> k >>j>> Q;
+    file >> k >> j >> Q;
     file >> nnodes >> neltos >> ndirich >> nneu;
 
     m.setParameters(k*j,Q*2);
