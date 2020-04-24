@@ -65,7 +65,7 @@ void leerMallayCondicionesLaboTres(mesh &m){
     file >> k >> j >> Q;
     file >> nnodes >> neltos >> ndirich >> nneu;
 
-    m.setParameters(k*j,Q*2);
+    m.setParameters(k*j,-Q);
     m.setSizes(nnodes,neltos,ndirich,nneu);
     m.createData();
 
